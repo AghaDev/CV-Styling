@@ -113,7 +113,7 @@ span{
     
     .skill[data-skill="1"] span{
         background-color: red;
-        width: 8%;
+        width: 5%;
         display: inline-block;
     }
     
