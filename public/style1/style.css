@@ -1,0 +1,207 @@
+body {
+  margin:auto;
+}
+
+header div {
+  display: flex;
+  background-color: grey;
+  padding-left: 200px;
+  height: 150px;
+}
+hgroup {
+  color: red;
+}
+
+.contacts {
+  position: absolute;
+  top: 1%;
+  width: 40%;
+}
+.contact {
+  display: flex;
+  background-color: black;
+  margin: 0;
+  height: 25px;
+}
+dd a,
+.contact-value {
+  color: red;
+  width: 400px;
+  margin-left: 2px;
+  text-decoration: none;
+}
+.contact-type {
+    background-color: red;
+    width: 135px;
+    color: white;
+}
+.content {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin:auto;
+}
+h3::before{
+    content: ' ';
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-flex;
+    margin-right: 5px;
+}
+h3{
+    border-bottom: 1px solid grey;
+    padding-bottom: 5px;
+}
+#about {
+    font-size: 22px;
+}
+#competencies h3{
+    font-size: 22px;
+    padding-top: 8px;
+}
+
+#competencies{
+    display: flex;
+    flex-direction: column;
+}
+
+
+span{
+    /* border: 10px solid grey; */
+}
+#contact h3{
+    display: none;
+    }
+
+    .skill{
+        color: white;
+        background-color: rgb(202, 202, 202);
+        padding: 5px;
+        margin-bottom: 4px;
+        line-height: 2;
+    }
+    .skills.skills-primary::before{
+        content: "Main";
+        font-size: 20px;
+        display: inline-block;
+        margin-left: 0;
+    }
+    
+    .skill span{
+        margin-left: -2px;
+        padding-left: 5px;
+    }
+    .skills.skills-secondary::before{
+        content: "Other";
+        font-size: 20px;
+        display: inline-block;
+        margin: 0;
+    }
+    .skill[data-skill="5"] span{
+        background-color: red;
+        width: 50%;
+        display: inline-block;
+    }
+    
+    .skill[data-skill="3"] span{
+        background-color: red;
+        width: 30%;
+        display: inline-block;
+    }
+    
+    .skill[data-skill="1"] span{
+        background-color: red;
+        width: 8%;
+        display: inline-block;
+    }
+    
+    .skill[data-skill="9"] span{
+        background-color: red;
+        width: 90%;
+        display: inline-block;
+    }
+    
+    .skill[data-skill="7"] span{
+        background-color: red;
+        width: 70%;
+        display: inline-block;
+    }
+    #experiences{
+        font-size: 22px;
+    }
+    .experience-date-separator{
+        color: red;
+    }
+    .experience-details{
+        color:grey;
+    }
+    h4{
+        color: red;
+    }
+    .experience-institution::before{
+        content:'@ ';
+    }
+    .experience-details::before{
+        content:'In'
+    }
+    #education{
+        font-size: 22px;
+    }
+    #hobbies{
+        font-size: 22px;
+    }
+
+    @media all and (max-width: 968px){
+        
+        body {
+            width: 100%;
+          }
+          header div {
+            
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+          }
+          
+          header{
+            margin-left: -150px;
+            padding-bottom: 40px;
+          }
+
+          img{
+            margin-left: -30px;
+            margin-top: -20px;
+          }
+          .contacts {
+            position: static;
+          }
+          .content{
+            grid-template-columns:1fr;
+            margin-left: 20px ;  
+            }
+            #contact h3{
+                display: block;
+            }
+            #contact{
+                font-size: 20px;
+            }
+            .contact{
+                background-color: red;
+                background: initial;
+                width: 65%;
+                display: flex;
+                flex-direction: column;
+                height: 30px;
+            }
+            .contacts dd{
+            margin-left: 140px;
+            margin-top: -25px;
+            }
+            .contact-value{
+                color: black;
+            }
+        
+    }
